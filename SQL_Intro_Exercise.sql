@@ -1,10 +1,10 @@
 
 -- find all products
-select * from products;
+select * from bestbuy.products;
 
 -- find all products that cost $1400
 select * from products
-where price = 1400;
+where price = 1400.00;
 
 -- find all products that cost $11.99 or $13.99
 select * from products
@@ -52,4 +52,4 @@ and Title = 'Geek Squad';
 -- find all products from the products table whose stock level is in the range -- of 500 to 1200. Order by Price from least to greatest. Hint: Use the between keyword
 select * from products
 where StockLevel between 500 AND 1200
-order by Price ASC;
+order by Price;
